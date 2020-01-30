@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box
+  }
+  
+  /* CURVES */
+  .curves {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .curve-title {
+    display: inline-block;
+    padding: 0 20px;
+    background: #153E6A;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    margin-left: 285px;
+    height: 25px;
+  }
+  .curve {
+    width: 75px;
+    height: 150px;
+    position: relative;
+    margin: -25px auto 0;
+  }
+  .curve:before {
+    content:'';
+    width: 50px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: inherit;
+    position: absolute;
+    top: 25px;
+  }
+  .curve-left {
+    background-color: #153E6A;
+    border-radius: 100px 0 0 100px;
+  }
+  .curve-left:before {
+    right:0
+  }
+  
+  .curve-right {
+    background-color: #97c0ff;
+    border-radius: 0 100px 100px 0;
+    left: 75px;
+  }
+  .curve-right:before {
+    left:0
+  }
+  .curve:first-of-type {
+    margin-top: -25px;
+  }
+  
+  /* CIRCLES */
+  .circle {
+    border-radius: 100%;
+    background-color: #1b1b1b;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: calc(50% - 37.5px);
+  }
+  .curve-right .circle {
+    right: 35px;
+  }
+  .curve-left .circle {
+    left: 35px;
+  }
+  
+  /* PARAGRAPHS */
+  .paragraph {
+    position: relative;
+    width: 150px;
+    text-align: justify;
+  }
+  .curve-right .paragraph {
+    left: 89px;
+    bottom: 66px;
+  }
+  .curve-left .paragraph {
+    right: 160px;
+    bottom: 66px;
+  }
+
+  .paragraph h2
+  {
+      font-size: 15px;
+      font-weight: 600;
+  }
+
+  .paragraph p
+  {
+      font-size: 12px;
+  }
